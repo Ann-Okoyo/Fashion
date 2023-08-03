@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCardView"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:contentPadding="4dp"
+    app:cardBackgroundColor="#E91E63">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="52dp"
+        android:text="LAMODEL SCHOOL"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivstudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:srcCompat="@drawable/lamodel" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Student name:"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/ivstudent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Age"
+        app:layout_constraintStart_toEndOf="@+id/ivstudent"
+        app:layout_constraintTop_toBottomOf="@+id/tvname" />
+
+    <TextView
+        android:id="@+id/tvheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Height"
+        app:layout_constraintStart_toEndOf="@+id/ivstudent"
+        app:layout_constraintTop_toBottomOf="@+id/tvage" />
+
+    <TextView
+        android:id="@+id/tvmodellingclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Commercial Modelling"
+        app:layout_constraintStart_toEndOf="@+id/ivstudent"
+        app:layout_constraintTop_toBottomOf="@+id/tvheight" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
